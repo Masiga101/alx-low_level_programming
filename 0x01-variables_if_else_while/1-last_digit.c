@@ -9,7 +9,7 @@
  * Return: Always 0 (Success)
  */
 
-int main (void)
+int main(void)
 {
 	int n;
 	int lastDigit;
@@ -17,7 +17,7 @@ int main (void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	lastDigit = n % 10;
+	lastDigit = n%10;
 
 	if (lastDigit > 5)
 	{
@@ -25,7 +25,7 @@ int main (void)
 	}
 	else if (lastDigit == 0)
 	{
-		printf ("The last digit of %d is %d and is zero \n", n, lastDigit);
+		printf ("The last digit of %d is %d and is zero\n", n, lastDigit);
 	}
 	else if (lastDigit != 0 && lastDigit < 6)
 	{
